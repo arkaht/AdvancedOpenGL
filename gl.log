@@ -1,0 +1,42 @@
+23-10-31 12:41:26 INFO : 	Subsystems initialised
+23-10-31 12:41:26 INFO : 	WindowSdl initialised
+23-10-31 12:41:26 INFO : 	OpenGL Context initialised
+23-10-31 12:41:26 INFO : 	GLEW initialised
+23-10-31 12:41:26 INFO : 	Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2
+23-10-31 12:41:26 INFO : 	OpenGL version supported 4.4.0 NVIDIA 536.67
+23-10-31 12:41:26 INFO : 	-----------------------------
+23-10-31 12:41:26 INFO : 	GL Context Params:
+23-10-31 12:41:26 INFO : 	GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS 192
+23-10-31 12:41:26 INFO : 	GL_MAX_CUBE_MAP_TEXTURE_SIZE 32768
+23-10-31 12:41:26 INFO : 	GL_MAX_DRAW_BUFFERS 8
+23-10-31 12:41:26 INFO : 	GL_MAX_FRAGMENT_UNIFORM_COMPONENTS 4096
+23-10-31 12:41:26 INFO : 	GL_MAX_TEXTURE_IMAGE_UNITS 32
+23-10-31 12:41:26 INFO : 	GL_MAX_TEXTURE_SIZE 32768
+23-10-31 12:41:26 INFO : 	GL_MAX_VARYING_FLOATS 124
+23-10-31 12:41:26 INFO : 	GL_MAX_VERTEX_ATTRIBS 16
+23-10-31 12:41:26 INFO : 	GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS 32
+23-10-31 12:41:26 INFO : 	GL_MAX_VERTEX_UNIFORM_COMPONENTS 4096
+23-10-31 12:41:26 INFO : 	GL_MAX_VIEWPORT_DIMS 32768 32768
+23-10-31 12:41:26 INFO : 	GL_STEREO 0
+23-10-31 12:41:26 INFO : 	
+23-10-31 12:41:26 INFO : 	program 3 GL_VALIDATE_STATUS = 1
+23-10-31 12:41:26 INFO : 	-----------------------------
+23-10-31 12:41:26 INFO : 	Shader programme 3 info:
+23-10-31 12:41:26 INFO : 	GL_LINK_STATUS = 1
+23-10-31 12:41:26 INFO : 	GL_ATTACHED_SHADERS = 2
+23-10-31 12:41:26 INFO : 	GL_ACTIVE_ATTRIBUTES = 1
+23-10-31 12:41:26 INFO : 	  0) type:vec4 name:position location:0
+23-10-31 12:41:26 INFO : 	GL_ACTIVE_UNIFORMS = 2
+23-10-31 12:41:26 INFO : 	  0) type:mat4 name:mv_matrix location:0
+23-10-31 12:41:26 INFO : 	  1) type:mat4 name:proj_matrix location:1
+23-10-31 12:41:26 INFO : 	program info log for GL index3
+23-10-31 12:41:26 INFO : 	
+23-10-31 12:41:26 INFO : 	program 3 GL_VALIDATE_STATUS = 1
+23-10-31 12:41:26 DEBUG: 	 --- OpenGL -------------------
+                                message (164): Buffer detailed info: Buffer object 1 (bound to GL_ARRAY_BUFFER_ARB, usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
+                                source: API
+                                type: Other
+                                id: 131185
+                                severity: Notification
+23-10-31 12:41:26 INFO : 	vertexPositions size 432
+23-10-31 12:41:31 INFO : 	Bye :)
