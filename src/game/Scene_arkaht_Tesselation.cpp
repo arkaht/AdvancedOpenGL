@@ -45,8 +45,14 @@ void Scene_arkaht_Tesselation::clean()
 
 void Scene_arkaht_Tesselation::handleEvent( const InputState& state )
 {
-	_mouse_position = state.mouseState.getPosition();
-	printf( "x=%f; y=%f\n", _mouse_position.x, _mouse_position.y );
+	Vector2 pos = state.mouseState.getPosition();
+	//  get as screen ratio, in range [-0.5; 0.5]
+	_mouse_position.x = pos.x / _game->windowWidth;
+	_mouse_position.y = pos.y / _game->windowHeight;
+	//  get normalized, in range [-1.0; 1.0]
+	_mouse_position = 2.0f * _mouse_position;
+
+	//printf( "x=%f; y=%f\n", _mouse_position.x, _mouse_position.y );
 
 	_time_scale_target = state.mouseState.getButtonValue( 1 ) ? 0.2f : 1.0f;
 }
@@ -105,7 +111,7 @@ void Scene_arkaht_Tesselation::draw()
 	_shader.use();
 	_shader.setMatrix4( "projection", _projection );
 	_shader.setMatrix4( "model", _transform.get_matrix() );
-	_shader.setVector2f( "mouse_position", _mouse_position );
+	_shader.setVector2f( "mouse", _mouse_position );
 	glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
 	glPointSize( 5.0f );
 	glDrawArrays( GL_PATCHES, 0, 36 );
