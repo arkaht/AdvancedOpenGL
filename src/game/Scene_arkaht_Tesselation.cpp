@@ -18,6 +18,7 @@ void Scene_arkaht_Tesselation::load()
 
 	//  load mesh
 	_mesh.load();
+	glPatchParameteri( GL_PATCH_VERTICES, 3 );
 
 	//  enable culling
 	glEnable( GL_CULL_FACE );
@@ -31,6 +32,10 @@ void Scene_arkaht_Tesselation::load()
 		0.1f,
 		1000.0f
 	);
+
+	//  setup transform
+	_transform.set_position( Vector3 { 0.0f, 0.0f, -4.0f } );
+	_transform.set_scale( Vector3 { 2.0f, 2.0f, 2.0f } );
 }
 
 void Scene_arkaht_Tesselation::clean()
@@ -40,18 +45,68 @@ void Scene_arkaht_Tesselation::clean()
 
 void Scene_arkaht_Tesselation::handleEvent( const InputState& state )
 {
+	_mouse_position = state.mouseState.getPosition();
+	printf( "x=%f; y=%f\n", _mouse_position.x, _mouse_position.y );
+
+	_time_scale_target = state.mouseState.getButtonValue( 1 ) ? 0.2f : 1.0f;
 }
 
 void Scene_arkaht_Tesselation::update( float dt )
 {
+	//  manipulate time
+	_time_scale = Maths::lerp( _time_scale, _time_scale_target, dt * 5.0f );
+	dt *= _time_scale;
 	_time += dt;
-	_transform.set_position( Vector3 { Maths::cos( _time ), 0.0f, -4.0f } );
+
+	//  translate
+	/*_transform.set_position( 
+		Vector3 { 
+			Maths::cos( _time ), 
+			Maths::sin( _time ) * 0.2f,
+			-4.0f 
+		} 
+	);*/
+
+	//  rotate
+	Vector3 angles_speed {
+		Maths::cos( _time ) * dt * 5.0f,
+		Maths::sin( _time ) * dt * 2.0f,
+		Maths::cos( _time * 2.0f ) * dt,
+	};
+	_transform.set_angles( _transform.get_angles() + angles_speed );
+
+	/*Quaternion rotation = _transform.get_rotation();
+	rotation = Quaternion::concatenate( 
+		rotation, 
+		Quaternion( Vector3::unitX, angles_speed.x ) 
+	);
+	rotation = Quaternion::concatenate(
+		rotation,
+		Quaternion( Vector3::unitY, angles_speed.y )
+	);
+	rotation = Quaternion::concatenate(
+		rotation,
+		Quaternion( Vector3::unitZ, angles_speed.z )
+	);
+	_transform.set_rotation( rotation );*/
+	
+	//  scale
+	/*float scale = 1.0f + Maths::abs( Maths::cos( _time ) );
+	_transform.set_scale( Vector3 { scale, scale, scale } );*/
 }
 
 void Scene_arkaht_Tesselation::draw()
 {
+	//  clear screen
+	static const GLfloat bgColor[] = { 0.0f, 0.0f, 0.0f, 1.0f };
+	glClearBufferfv( GL_COLOR, 0, bgColor );
+
+	//  draw mesh
 	_shader.use();
 	_shader.setMatrix4( "projection", _projection );
 	_shader.setMatrix4( "model", _transform.get_matrix() );
-	_mesh.draw();
+	_shader.setVector2f( "mouse_position", _mouse_position );
+	glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
+	glPointSize( 5.0f );
+	glDrawArrays( GL_PATCHES, 0, 36 );
 }

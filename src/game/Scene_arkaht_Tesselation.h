@@ -29,9 +29,13 @@ private:
 	Shader _shader;
 
 	float _time = 0.0f;
+	float _time_scale = 0.0f;
+	float _time_scale_target = 1.0f;
 
 	Transform _transform;
 	CubeMesh _mesh;
+
+	Vector2 _mouse_position;
 
 	Matrix4 _projection;
 };

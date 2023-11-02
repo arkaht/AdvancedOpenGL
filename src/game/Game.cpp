@@ -4,7 +4,7 @@
 #include "../engine/Assets.h"
 #include "../engine/Scene.h"
 
-#define SCENE_NAME Scene_arkaht_Tesselation
+#define SCENE_NAME Scene_arkaht_Tesselation//Lighting
 #include PATH(SCENE_NAME,EXT)
 //#include "Scene_005_Tessellation.h"
 
