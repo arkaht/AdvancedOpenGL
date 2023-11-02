@@ -1,53 +1,42 @@
-23-10-31 17:09:38 INFO : 	Subsystems initialised
-23-10-31 17:09:38 INFO : 	WindowSdl initialised
-23-10-31 17:09:38 INFO : 	OpenGL Context initialised
-23-10-31 17:09:38 INFO : 	GLEW initialised
-23-10-31 17:09:38 INFO : 	Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2
-23-10-31 17:09:38 INFO : 	OpenGL version supported 4.4.0 NVIDIA 536.67
-23-10-31 17:09:38 INFO : 	-----------------------------
-23-10-31 17:09:38 INFO : 	GL Context Params:
-23-10-31 17:09:38 INFO : 	GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS 192
-23-10-31 17:09:38 INFO : 	GL_MAX_CUBE_MAP_TEXTURE_SIZE 32768
-23-10-31 17:09:38 INFO : 	GL_MAX_DRAW_BUFFERS 8
-23-10-31 17:09:38 INFO : 	GL_MAX_FRAGMENT_UNIFORM_COMPONENTS 4096
-23-10-31 17:09:38 INFO : 	GL_MAX_TEXTURE_IMAGE_UNITS 32
-23-10-31 17:09:38 INFO : 	GL_MAX_TEXTURE_SIZE 32768
-23-10-31 17:09:38 INFO : 	GL_MAX_VARYING_FLOATS 124
-23-10-31 17:09:38 INFO : 	GL_MAX_VERTEX_ATTRIBS 16
-23-10-31 17:09:38 INFO : 	GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS 32
-23-10-31 17:09:38 INFO : 	GL_MAX_VERTEX_UNIFORM_COMPONENTS 4096
-23-10-31 17:09:38 INFO : 	GL_MAX_VIEWPORT_DIMS 32768 32768
-23-10-31 17:09:38 INFO : 	GL_STEREO 0
-23-10-31 17:09:38 INFO : 	
-23-10-31 17:09:38 INFO : 	program 3 GL_VALIDATE_STATUS = 1
-23-10-31 17:09:38 INFO : 	-----------------------------
-23-10-31 17:09:38 INFO : 	Shader programme 3 info:
-23-10-31 17:09:38 INFO : 	GL_LINK_STATUS = 1
-23-10-31 17:09:38 INFO : 	GL_ATTACHED_SHADERS = 2
-23-10-31 17:09:38 INFO : 	GL_ACTIVE_ATTRIBUTES = 2
-23-10-31 17:09:38 INFO : 	  0) type:vec3 name:normal location:1
-23-10-31 17:09:38 INFO : 	  1) type:vec3 name:position location:0
-23-10-31 17:09:38 INFO : 	GL_ACTIVE_UNIFORMS = 7
-23-10-31 17:09:38 INFO : 	  0) type:int name:is_light location:0
-23-10-31 17:09:38 INFO : 	  1) type:float name:light_ambient location:1
-23-10-31 17:09:38 INFO : 	  2) type:vec4 name:light_color location:2
-23-10-31 17:09:38 INFO : 	  3) type:vec3 name:light_position location:3
-23-10-31 17:09:38 INFO : 	  4) type:float name:light_radius location:4
-23-10-31 17:09:38 INFO : 	  5) type:mat4 name:model location:5
-23-10-31 17:09:38 INFO : 	  6) type:mat4 name:projection location:6
-23-10-31 17:09:38 INFO : 	program info log for GL index3
-23-10-31 17:09:38 INFO : 	
-23-10-31 17:09:38 INFO : 	program 3 GL_VALIDATE_STATUS = 1
-23-10-31 17:09:38 DEBUG: 	 --- OpenGL -------------------
-                                message (164): Buffer detailed info: Buffer object 1 (bound to GL_ARRAY_BUFFER_ARB, usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
-                                source: API
-                                type: Other
-                                id: 131185
-                                severity: Notification
-23-10-31 17:09:38 DEBUG: 	 --- OpenGL -------------------
-                                message (172): Buffer detailed info: Buffer object 2 (bound to GL_ELEMENT_ARRAY_BUFFER_ARB, usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
-                                source: API
-                                type: Other
-                                id: 131185
-                                severity: Notification
-23-10-31 17:09:39 INFO : 	Bye :)
+23-11-02 12:02:23 INFO : 	Subsystems initialised
+23-11-02 12:02:23 INFO : 	WindowSdl initialised
+23-11-02 12:02:23 INFO : 	OpenGL Context initialised
+23-11-02 12:02:23 INFO : 	GLEW initialised
+23-11-02 12:02:23 INFO : 	Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2
+23-11-02 12:02:23 INFO : 	OpenGL version supported 4.4.0 NVIDIA 536.67
+23-11-02 12:02:23 INFO : 	-----------------------------
+23-11-02 12:02:23 INFO : 	GL Context Params:
+23-11-02 12:02:23 INFO : 	GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS 192
+23-11-02 12:02:23 INFO : 	GL_MAX_CUBE_MAP_TEXTURE_SIZE 32768
+23-11-02 12:02:23 INFO : 	GL_MAX_DRAW_BUFFERS 8
+23-11-02 12:02:23 INFO : 	GL_MAX_FRAGMENT_UNIFORM_COMPONENTS 4096
+23-11-02 12:02:23 INFO : 	GL_MAX_TEXTURE_IMAGE_UNITS 32
+23-11-02 12:02:23 INFO : 	GL_MAX_TEXTURE_SIZE 32768
+23-11-02 12:02:23 INFO : 	GL_MAX_VARYING_FLOATS 124
+23-11-02 12:02:23 INFO : 	GL_MAX_VERTEX_ATTRIBS 16
+23-11-02 12:02:23 INFO : 	GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS 32
+23-11-02 12:02:23 INFO : 	GL_MAX_VERTEX_UNIFORM_COMPONENTS 4096
+23-11-02 12:02:23 INFO : 	GL_MAX_VIEWPORT_DIMS 32768 32768
+23-11-02 12:02:23 INFO : 	GL_STEREO 0
+23-11-02 12:02:23 INFO : 	
+23-11-02 12:02:23 ERROR: 	Could not link shader programme GL index 5
+23-11-02 12:02:23 INFO : 	program info log for GL index5
+23-11-02 12:02:23 INFO : 	Tessellation control info
+-------------------------
+(0) : error C6029: No output primitive type
+
+23-11-02 12:02:23 INFO : 	program 5 GL_VALIDATE_STATUS = 0
+23-11-02 12:02:23 INFO : 	program info log for GL index5
+23-11-02 12:02:23 INFO : 	
+23-11-02 12:02:23 ERROR: 	Could not validate shader5
+23-11-02 12:02:23 INFO : 	-----------------------------
+23-11-02 12:02:23 INFO : 	Shader programme 5 info:
+23-11-02 12:02:23 INFO : 	GL_LINK_STATUS = 0
+23-11-02 12:02:23 INFO : 	GL_ATTACHED_SHADERS = 4
+23-11-02 12:02:23 INFO : 	GL_ACTIVE_ATTRIBUTES = 0
+23-11-02 12:02:23 INFO : 	GL_ACTIVE_UNIFORMS = 0
+23-11-02 12:02:23 INFO : 	program info log for GL index5
+23-11-02 12:02:23 INFO : 	
+23-11-02 12:02:23 INFO : 	program 5 GL_VALIDATE_STATUS = 0
+23-11-02 12:02:23 INFO : 	program info log for GL index5
+23-11-02 12:02:23 INFO : 	

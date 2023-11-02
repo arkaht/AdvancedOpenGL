@@ -12,12 +12,14 @@ void CubeObject::update() {
 
 }
 
-void CubeObject::draw( Shader& shader ) {
+void CubeObject::draw( Shader& shader )
+{
 	shader.setMatrix4( "mv_matrix", transform );
 	cubeMesh->draw();
 }
 
-void CubeObject::setPosition( float xP, float yP, float zP ) {
+void CubeObject::setPosition( float xP, float yP, float zP )
+{
 	position.x = xP;
 	position.y = yP;
 	position.z = zP;

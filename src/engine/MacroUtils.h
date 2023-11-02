@@ -19,7 +19,6 @@
 #define SHADER_COMP(s) PATH3(SHADER_PATH,s,EXT_COMP)
 #define SHADER_ID(s) STR(s)
 
-#define SCENE_NAME Scene_arkaht_Lighting
 #define SHADER_NAME IDENT(008_SpinningCubes)
 
 /**
