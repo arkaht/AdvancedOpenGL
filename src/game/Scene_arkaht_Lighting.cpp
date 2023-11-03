@@ -145,6 +145,16 @@ void Scene_arkaht_Lighting::setup_mesh()
 	//  setup vertices & indices
 	const unsigned int vertex_elements_stride = 6;
 	std::vector<float> vertices {
+		/*
+		 *  NOTE:
+		 *  the normals of my cube are not face normals, they should
+		 *  but I haven't found code which already do it and I didn't want
+		 *  to lose my time finding them by myself and to re-setup all 
+		 *  the vertices and indices..
+		 * 
+		 *  so this explains why I have a smooth light shading on my cubes
+		 */
+
 		//  0
 		-0.5f, -0.5f,  0.5f,  //  position
 		-1.0f, -1.0f, 1.0f,   //  normal
