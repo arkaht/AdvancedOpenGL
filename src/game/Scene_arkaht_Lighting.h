@@ -39,6 +39,7 @@ private:
 		GLuint ibo { 0 };
 		GLuint n_indices { 0 };
 		GLuint n_vertices { 0 };
+		GLenum polygon_mode { GL_FILL };
 	} _mesh;
 
 	const int CUBES_COUNT = 64;

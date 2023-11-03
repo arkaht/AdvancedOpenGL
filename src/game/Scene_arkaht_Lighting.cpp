@@ -64,6 +64,12 @@ void Scene_arkaht_Lighting::handleEvent( const InputState& state )
 {
 	//  LMB to slow motion
 	_time_scale = state.mouseState.getButtonValue( 1 ) ? 0.2f : 1.0f;
+
+	//  RMB to switch rendering mode
+	if ( state.mouseState.getButtonState( 3 ) == KeyStatus::JustPressed )
+	{
+		_mesh.polygon_mode = _mesh.polygon_mode == GL_FILL ? GL_LINE : GL_FILL;
+	}
 }
 
 void Scene_arkaht_Lighting::update( float dt )
@@ -112,7 +118,7 @@ void Scene_arkaht_Lighting::draw()
 	static const GLfloat bgColor[] = { 0.0f, 0.0f, 0.0f, 1.0f };
 	glClearBufferfv( GL_COLOR, 0, bgColor );
 
-	//  send uniforms
+	//  setup shader
 	_shader.use();
 	_shader.setMatrix4( "projection", _projection );
 	_shader.setVector3f( "light_position", _light_transform.get_position() );
@@ -120,6 +126,9 @@ void Scene_arkaht_Lighting::draw()
 	_shader.setFloat( "light_ambient", _light_ambient );
 	_shader.setFloat( "light_radius", _light_radius );
 
+	//  set draw mode
+	glPolygonMode( GL_FRONT_AND_BACK, _mesh.polygon_mode );
+	
 	//  draw meshes
 	for ( int i = 0; i < CUBES_COUNT; i++ )
 	{
