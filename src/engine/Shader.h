@@ -31,14 +31,14 @@ public:
 
 	// Compiles the shader from given source code
 	void compile(
-		const GLchar *vertexSource,
-		const GLchar *fragmentSource,
-        const GLchar *tessControlSource = nullptr,
-        const GLchar *tessEvalSource = nullptr,
-		const GLchar *geometrySource = nullptr
+		const GLchar* vertexSource,
+		const GLchar* fragmentSource,
+		const GLchar* tessControlSource = nullptr,
+		const GLchar* tessEvalSource = nullptr,
+		const GLchar* geometrySource = nullptr
 	);
 
-	bool isValid();
+	bool isValid() { return isValid( id ); }
 
 	// Utility functions
 	void setFloat(const GLchar *name, GLfloat value);

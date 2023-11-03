@@ -28,11 +28,6 @@ void Shader::compile(const GLchar *vertexSource, const GLchar *fragmentSource,
     printAllParams(id);
 }
 
-bool Shader::isValid()
-{
-    return isValid( id );
-}
-
 void Shader::compileVertexShader(const GLchar *vertex_source)
 {
     vs = glCreateShader(GL_VERTEX_SHADER);
