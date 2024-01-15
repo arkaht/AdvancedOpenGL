@@ -5,6 +5,8 @@
 
 #include "Transform.hpp"
 
+//  Main inspiration: https://github.com/abecker96/ComputeParticles
+
 class Scene_arkaht_ParticleSystem : public Scene
 {
 public:
