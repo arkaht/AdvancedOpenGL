@@ -1,53 +1,110 @@
-23-11-02 16:34:25 INFO : 	Subsystems initialised
-23-11-02 16:34:25 INFO : 	WindowSdl initialised
-23-11-02 16:34:25 INFO : 	OpenGL Context initialised
-23-11-02 16:34:25 INFO : 	GLEW initialised
-23-11-02 16:34:25 INFO : 	Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2
-23-11-02 16:34:25 INFO : 	OpenGL version supported 4.4.0 NVIDIA 536.67
-23-11-02 16:34:25 INFO : 	-----------------------------
-23-11-02 16:34:25 INFO : 	GL Context Params:
-23-11-02 16:34:25 INFO : 	GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS 192
-23-11-02 16:34:25 INFO : 	GL_MAX_CUBE_MAP_TEXTURE_SIZE 32768
-23-11-02 16:34:25 INFO : 	GL_MAX_DRAW_BUFFERS 8
-23-11-02 16:34:25 INFO : 	GL_MAX_FRAGMENT_UNIFORM_COMPONENTS 4096
-23-11-02 16:34:25 INFO : 	GL_MAX_TEXTURE_IMAGE_UNITS 32
-23-11-02 16:34:25 INFO : 	GL_MAX_TEXTURE_SIZE 32768
-23-11-02 16:34:25 INFO : 	GL_MAX_VARYING_FLOATS 124
-23-11-02 16:34:25 INFO : 	GL_MAX_VERTEX_ATTRIBS 16
-23-11-02 16:34:25 INFO : 	GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS 32
-23-11-02 16:34:25 INFO : 	GL_MAX_VERTEX_UNIFORM_COMPONENTS 4096
-23-11-02 16:34:25 INFO : 	GL_MAX_VIEWPORT_DIMS 32768 32768
-23-11-02 16:34:25 INFO : 	GL_STEREO 0
-23-11-02 16:34:25 INFO : 	
-23-11-02 16:34:25 INFO : 	program 3 GL_VALIDATE_STATUS = 1
-23-11-02 16:34:25 INFO : 	-----------------------------
-23-11-02 16:34:25 INFO : 	Shader programme 3 info:
-23-11-02 16:34:25 INFO : 	GL_LINK_STATUS = 1
-23-11-02 16:34:25 INFO : 	GL_ATTACHED_SHADERS = 2
-23-11-02 16:34:25 INFO : 	GL_ACTIVE_ATTRIBUTES = 2
-23-11-02 16:34:25 INFO : 	  0) type:vec3 name:normal location:1
-23-11-02 16:34:25 INFO : 	  1) type:vec3 name:position location:0
-23-11-02 16:34:25 INFO : 	GL_ACTIVE_UNIFORMS = 7
-23-11-02 16:34:25 INFO : 	  0) type:int name:is_light location:0
-23-11-02 16:34:25 INFO : 	  1) type:float name:light_ambient location:1
-23-11-02 16:34:25 INFO : 	  2) type:vec4 name:light_color location:2
-23-11-02 16:34:25 INFO : 	  3) type:vec3 name:light_position location:3
-23-11-02 16:34:25 INFO : 	  4) type:float name:light_radius location:4
-23-11-02 16:34:25 INFO : 	  5) type:mat4 name:model location:5
-23-11-02 16:34:25 INFO : 	  6) type:mat4 name:projection location:6
-23-11-02 16:34:25 INFO : 	program info log for GL index3
-23-11-02 16:34:25 INFO : 	
-23-11-02 16:34:25 INFO : 	program 3 GL_VALIDATE_STATUS = 1
-23-11-02 16:34:25 DEBUG: 	 --- OpenGL -------------------
-                                message (164): Buffer detailed info: Buffer object 1 (bound to GL_ARRAY_BUFFER_ARB, usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
+24-01-15 16:13:53 INFO : 	Subsystems initialised
+24-01-15 16:13:53 INFO : 	WindowSdl initialised
+24-01-15 16:13:53 INFO : 	OpenGL Context initialised
+24-01-15 16:13:53 INFO : 	GLEW initialised
+24-01-15 16:13:53 INFO : 	Renderer: NVIDIA GeForce RTX 3060 Laptop GPU/PCIe/SSE2
+24-01-15 16:13:53 INFO : 	OpenGL version supported 4.4.0 NVIDIA 537.13
+24-01-15 16:13:53 INFO : 	-----------------------------
+24-01-15 16:13:53 INFO : 	GL Context Params:
+24-01-15 16:13:53 INFO : 	GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS 192
+24-01-15 16:13:53 INFO : 	GL_MAX_CUBE_MAP_TEXTURE_SIZE 32768
+24-01-15 16:13:53 INFO : 	GL_MAX_DRAW_BUFFERS 8
+24-01-15 16:13:53 INFO : 	GL_MAX_FRAGMENT_UNIFORM_COMPONENTS 4096
+24-01-15 16:13:53 INFO : 	GL_MAX_TEXTURE_IMAGE_UNITS 32
+24-01-15 16:13:53 INFO : 	GL_MAX_TEXTURE_SIZE 32768
+24-01-15 16:13:53 INFO : 	GL_MAX_VARYING_FLOATS 124
+24-01-15 16:13:53 INFO : 	GL_MAX_VERTEX_ATTRIBS 16
+24-01-15 16:13:53 INFO : 	GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS 32
+24-01-15 16:13:53 INFO : 	GL_MAX_VERTEX_UNIFORM_COMPONENTS 4096
+24-01-15 16:13:53 INFO : 	GL_MAX_VIEWPORT_DIMS 32768 32768
+24-01-15 16:13:53 INFO : 	GL_STEREO 0
+24-01-15 16:13:53 INFO : 	
+24-01-15 16:13:54 DEBUG: 	 --- OpenGL -------------------
+                                message (169): Buffer detailed info: Buffer object 1 (bound to GL_SHADER_STORAGE_BUFFER, usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
                                 source: API
                                 type: Other
                                 id: 131185
                                 severity: Notification
-23-11-02 16:34:25 DEBUG: 	 --- OpenGL -------------------
-                                message (172): Buffer detailed info: Buffer object 2 (bound to GL_ELEMENT_ARRAY_BUFFER_ARB, usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
+24-01-15 16:13:54 DEBUG: 	 --- OpenGL -------------------
+                                message (169): Buffer detailed info: Buffer object 2 (bound to GL_SHADER_STORAGE_BUFFER, usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
                                 source: API
                                 type: Other
                                 id: 131185
                                 severity: Notification
-23-11-02 16:34:36 INFO : 	Bye :)
+24-01-15 16:13:54 DEBUG: 	 --- OpenGL -------------------
+                                message (169): Buffer detailed info: Buffer object 3 (bound to GL_SHADER_STORAGE_BUFFER, usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
+                                source: API
+                                type: Other
+                                id: 131185
+                                severity: Notification
+24-01-15 16:13:55 INFO : 	program 2 GL_VALIDATE_STATUS = 1
+24-01-15 16:13:55 INFO : 	program 5 GL_VALIDATE_STATUS = 1
+24-01-15 16:13:55 INFO : 	-----------------------------
+24-01-15 16:13:55 INFO : 	Shader programme 5 info:
+24-01-15 16:13:55 INFO : 	GL_LINK_STATUS = 1
+24-01-15 16:13:55 INFO : 	GL_ATTACHED_SHADERS = 2
+24-01-15 16:13:55 INFO : 	GL_ACTIVE_ATTRIBUTES = 1
+24-01-15 16:13:55 INFO : 	  0) type:int name:gl_VertexID location:-1
+24-01-15 16:13:55 INFO : 	GL_ACTIVE_UNIFORMS = 3
+24-01-15 16:13:55 INFO : 	  0) type:float name:point_size location:0
+24-01-15 16:13:55 INFO : 	  1) type:mat4 name:projection location:1
+24-01-15 16:13:55 INFO : 	  2) type:mat4 name:view location:2
+24-01-15 16:13:55 INFO : 	program info log for GL index5
+24-01-15 16:13:55 INFO : 	
+24-01-15 16:13:55 INFO : 	program 5 GL_VALIDATE_STATUS = 1
+24-01-15 16:13:55 ERROR: 	 --- OpenGL -------------------
+                                message (115): GL_INVALID_OPERATION error generated. Function glVertexPointer is deprecated and not available in preview contexts.
+                                source: API
+                                type: Error
+                                id: 1282
+                                severity: High
+24-01-15 16:13:55 ERROR: 	 --- OpenGL -------------------
+                                message (115): GL_INVALID_OPERATION error generated. Function glVertexPointer is deprecated and not available in preview contexts.
+                                source: API
+                                type: Error
+                                id: 1282
+                                severity: High
+24-01-15 16:13:55 ERROR: 	 --- OpenGL -------------------
+                                message (115): GL_INVALID_OPERATION error generated. Function glVertexPointer is deprecated and not available in preview contexts.
+                                source: API
+                                type: Error
+                                id: 1282
+                                severity: High
+24-01-15 16:13:55 DEBUG: 	 --- OpenGL -------------------
+                                message (173): Buffer detailed info: Buffer object 1 (bound to GL_SHADER_STORAGE_BUFFER (3), usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
+                                source: API
+                                type: Other
+                                id: 131185
+                                severity: Notification
+24-01-15 16:13:55 DEBUG: 	 --- OpenGL -------------------
+                                message (173): Buffer detailed info: Buffer object 1 (bound to GL_SHADER_STORAGE_BUFFER (3), usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
+                                source: API
+                                type: Other
+                                id: 131185
+                                severity: Notification
+24-01-15 16:13:55 DEBUG: 	 --- OpenGL -------------------
+                                message (173): Buffer detailed info: Buffer object 2 (bound to GL_SHADER_STORAGE_BUFFER (4), usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
+                                source: API
+                                type: Other
+                                id: 131185
+                                severity: Notification
+24-01-15 16:13:55 DEBUG: 	 --- OpenGL -------------------
+                                message (173): Buffer detailed info: Buffer object 2 (bound to GL_SHADER_STORAGE_BUFFER (4), usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
+                                source: API
+                                type: Other
+                                id: 131185
+                                severity: Notification
+24-01-15 16:13:55 DEBUG: 	 --- OpenGL -------------------
+                                message (198): Buffer detailed info: Buffer object 3 (bound to GL_ARRAY_BUFFER_ARB, and GL_SHADER_STORAGE_BUFFER (5), usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
+                                source: API
+                                type: Other
+                                id: 131185
+                                severity: Notification
+24-01-15 16:13:55 DEBUG: 	 --- OpenGL -------------------
+                                message (198): Buffer detailed info: Buffer object 3 (bound to GL_ARRAY_BUFFER_ARB, and GL_SHADER_STORAGE_BUFFER (5), usage hint is GL_STATIC_DRAW) will use VIDEO memory as the source for buffer object operations.
+                                source: API
+                                type: Other
+                                id: 131185
+                                severity: Notification
+24-01-15 16:13:55 ERROR: 	OpenGL error: 1282
+24-01-15 16:18:21 INFO : 	Bye :)
