@@ -59,16 +59,16 @@ private:
 
 	struct {
 		float time_scale = 4.0f;
-		float acceleration_force = 100.0f;
+		float acceleration_force = 50.0f;
 
 		Vector3 low_speed_color { 0.0f, 0.25f, 1.0f };
 		Vector3 high_speed_color { 1.0f, 0.0f, 1.0f };
 		float high_speed_max = 15.0f;
 
-		Vector3 blackhole1 { 0.0f, 0.0f, 0.0f };
-		Vector3 blackhole2 { 0.0f, 0.0f, 0.0f };
-		Vector3 blackhole_color { 1.0f, 0.3f, 0.0f };
-		float blackhole_speed = 0.25f;
+		Vector3 blackhole1 { 0.0f, 0.0f, 0.0f };  //  don't change, auto-updated
+		Vector3 blackhole2 { 0.0f, 0.0f, 0.0f };  //  don't change, auto-updated
+		Vector3 blackhole_color { 1.0f, 1.0f, 1.0f };
+		float blackhole_speed = 0.03f;
 		float blackhole_dist = 75.0f;
 		float blackhole_height = 50.0f;
 		float blackhole_color_dist_max = 20.0f;

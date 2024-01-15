@@ -68,6 +68,6 @@ void main()
     //  find new color
     vec3 color = vec3( 1.0 );
     color = mix( low_speed_color, high_speed_color, min( new_velocity_length / high_speed_max, 1.0 ) );  //  colorize depending on velocity
-    color = mix( blackhole_color, color, min( dist_to_blackhole1 / blackhole_color_dist_max + dist_to_blackhole2 / blackhole_color_dist_max, 1.0 ) );  //  colorize depending on closeness to blackholes
+    color = mix( color, blackhole_color, 1.0 - min( min( dist_to_blackhole1 / blackhole_color_dist_max, 1.0 ) * min( dist_to_blackhole2 / blackhole_color_dist_max, 1.0 ), 1.0 ) );  //  colorize depending on closeness to blackholes
     Colors[gid].xyz = color;
 }
